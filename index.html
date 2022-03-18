@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Home</title>	
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no">
+		<link id="googleFonts" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800%7CShadows+Into+Light&display=swap" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/animate.compat.css">		
+		<link rel="stylesheet" href="css/theme.css">
+		<link rel="stylesheet" href="css/theme-elements.css">		
+		<link rel="stylesheet" href="css/default.css">
+		<script src="js/jquery.js"></script>
+		<link href="css/video-js.css" rel="stylesheet" />
+	</head>
+	<body>
+		<div class="body">
+			<header id="header" class="header-effect-shrink">
+				<div class="header-body border-top-0">
+					<div class="header-container container">
+						<div class="header-row">
+							<div class="header-column justify-content-end">
+								<div class="header-row">
+									<div class="header-nav header-nav-line header-nav-bottom-line header-nav-bottom-line-no-transform header-nav-bottom-line-active-text-dark header-nav-bottom-line-effect-1 order-2 order-lg-1">
+										<div class="header-nav-main header-nav-main-square header-nav-main-dropdown-no-borders header-nav-main-effect-2 header-nav-main-sub-effect-1">
+											<nav class="collapse">
+												<ul class="nav nav-pills" id="mainNav">
+													<li class="dropdown">
+														<a class="dropdown-item dropdown-toggle" href="index.html">
+															Home
+														</a>
+													</li>
+													<li class="dropdown">
+														<a class="dropdown-item dropdown-toggle active" href="#">
+															Portfolio
+														</a>
+														<ul class="dropdown-menu">
+															<li class="dropdown-submenu">
+																<a class="dropdown-item" href="#">Project</a>
+																<ul class="dropdown-menu">
+																	<li><a class="dropdown-item" href="#">Project</a></li>
+																</ul>
+															</li>
+															<li class="dropdown-submenu">
+																<a class="dropdown-item" href="#">Grid Layouts</a>
+																<ul class="dropdown-menu">
+																	<li><a class="dropdown-item" href="#">1 Column</a></li>
+																</ul>
+															</li>
+														</ul>
+													</li>
+												</ul>
+											</nav>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</header>
+
+			<div role="main" class="main">
+				<section class="page-header page-header-modern bg-color-light-scale-1 page-header-md ">
+					<div class="container-fluid">
+						<div class="row align-items-center">
+							<div class="col">
+								<div class="row">
+									<div class="col-md-12 align-self-center p-static order-2 text-center">
+										<div class="overflow-hidden pb-2">
+											<h1 class="text-dark font-weight-bold text-9 appear-animation" data-appear-animation="maskUp" data-appear-animation-delay="100">Dialogue Skip</h2>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				
+				<div class="container py-2">					
+					<div class="container py-1">
+						<ul id="speakers" class="nav nav-pills sort-source sort-source-style-3 justify-content-center" data-sort-id="portfolio">
+							<li class="nav-item" ><button id="both" class="nav-link text-1 text-uppercase active" >Both</button></li>
+							<li class="nav-item"><button id="person1" class="nav-link text-1 text-uppercase" >1st Speaker</button></li>
+							<li class="nav-item"><button id="person2" class="nav-link text-1 text-uppercase" >2nd Speaker</button></li>
+						</ul>
+					</div>
+
+					<div class="sort-destination-loader sort-destination-loader-showing mt-3">						
+						<div class="row portfolio-list sort-destination" data-sort-id="portfolio">							
+							<div class="col-lg-12 isotope-item mt-4 brands">
+								<div class="row">									
+									<div class="col-lg-6">										
+										<div class="overflow-hidden">
+											<h2 class="text-color-dark font-weight-bold text-5 mb-2 appear-animation" data-appear-animation="maskUp" data-appear-animation-delay="600">Transcript</h2>
+										</div>
+										<p id="dialogue" class="appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="800"></p>
+									</div>
+									<div class="col-lg-6">
+										<div id="vid" class="portfolio-item">
+											<span  class="thumb-info thumb-info-no-zoom thumb-info-lighten border-radius-0 appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="100">
+												
+												<video
+												id="my-video"
+												class="video-js"
+												controls="true"
+												preload="auto"
+												width="530"
+												height="264"
+												poster=""
+												data-setup="{}"
+												>
+												<source src="debate.mp4" type="video/mp4" /> 
+													<p class="vjs-no-js">
+														To view this video please enable JavaScript
+														<a href="https://videojs.com/html5-video-support/" target="_blank"
+														>supports HTML5 video</a>
+													</p>
+												</video>
+												<div id="myData"></div>
+											</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="mybutton"><button class="feedback">Stop auto-scrolling</button></div>
+		<script src="js/jquery.isotope.min.js"></script>
+		<script src="js/theme.js"></script>
+		<script src="js/theme.init.js"></script>
+		<script src="js/video.min.js"></script>
+		<script src="video.js"></script>
+		<script src="DialogueSkip.js"></script>
+	</body>
+</html>

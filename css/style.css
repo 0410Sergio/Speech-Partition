@@ -1,0 +1,36 @@
+
+textarea {
+    font-size: .8rem;
+    letter-spacing: 1px;
+    padding: 10px;
+    max-width: 100%;
+    line-height: 1.5;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 1px #999;
+    resize: none;
+    overflow: hidden;
+}
+
+#vid {
+  position: fixed;
+}
+
+#speakers {
+  position: fixed;
+  right: 500px;
+  z-index: 1;
+}
+.feedback {
+  background-color : #1486a8;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 4px;
+  border-color: #1b92b6;
+}
+
+#mybutton {
+  position: fixed;
+  bottom: -4px;
+  right: 80px;
+}
